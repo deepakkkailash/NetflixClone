@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Netflix</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="Images/NetflixIcon.png">
+    </head>
+    <body>
+
+        <section id="navbar">
+            <div class="navbar">
+                <div class="navbar_item" ><a href="#"><img id="netflix_logo" src="Images/Netflix_MainLogo.png"></a></div>
+                <div class="navbar_item"><a href="#">Home</a></div>
+                <div class="navbar_item"><a href="#">TV Shows</a></div>
+                <div class="navbar_item"><a href="#">Movies</a></div>
+                <div class="navbar_item"><a href="#">New & Popular</a></div>
+                <div class="navbar_item"><a href="#">My List</a></div>
+                <div class="navbar_item"><a href="#">Browse by Languages </a></div>
+                <div class="navbar_item"><img id="search" class="logo" src="Images\Search_Logo.png"></div>
+                <div id="Hidden_Search"><input type="text" placeholder="Titles,people,genres"></div>
+                <div  class="navbar_item"><img id="notifs" class="logo" src="Images\notifications.webp"></div>
+                <div class="navbar_item"><img class="logo" src="Images\netflixavatar.png"></div>
+            </div>
+        </section>
+        <ul id="notif_List" class="Notifications_List" type="none">
+            <li><img class="thumbnail_img_notifs" src="Images/leo.webp">LEO IS HERE</li>
+            <li><img class="thumbnail_img_notifs" src="Images/JigarthandaDoubleX.webp">Double X might just be the best film of the year for you</li>
+            <li><img class="thumbnail_img_notifs" src="Images/Archies.jpeg">Dont Miss Zoya Akthar's Archies</li>
+        </ul>
+        <video autoplay loop muted plays-inline class="Trailer_Container">
+            <source src="Images/Leo.mp4" type="video/mp4">
+        </video>
+        <div class="MainPage_Video_Logo">
+            <img class="LogoPic" src="Images\LeoLogo.png" alt="Leo">
+        </div>
+        <button  id="PlayNow" class="MainPage_Video_Buttons">Play</button>
+        <button id="MoreInfo" class="MainPage_Video_Buttons">More Info</button>
+        <h3 id="actionadv" class="mainpage_headings">Action & Adventure Movies</h3>
+        <div class="MovieList">
+            <div class="Movie"><img src="Images/JigarthandaDoubleX.webp" alt=""></div>
+            <div class="Movie"> <img src="Images/DhakDhak.webp" alt=""></div>
+            <div class="Movie"> <img src="Images/F&F8.webp" alt=""></div>
+            <div class="Movie"> <img src="Images/Equilizer3.webp" alt=""></div>
+            <div class="Movie"><img src="Images/TokyoDrift.webp" alt=""></div>
+        </div>
+        <h3 class="mainpage_headings" id="TrendingNow">Trending Now</h3>
+        <div class="TrendingList">
+            <div class="Movie"><img src="Images/OMG.webp" alt=""></div>
+            <div class="Movie"> <img src="Images/Leo.webp" alt=""></div>
+            <div class="Movie"> <img src="Images/Jawan.webp" alt=""></div>
+            <div class="Movie"> <img src="Images/Archies.jpeg" alt=""></div>
+            <div class="Movie"><img src="Images/KaalaPaani.jpeg" alt=""></div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

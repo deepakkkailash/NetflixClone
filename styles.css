@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    overflow-y: scroll;
+    height:200vh;
+    width: 200vh;
+}
+.navbar{
+    width:100%;
+    display: grid;
+    grid-template-columns: 11% 7% 7% 7% 7% 7% 25% 5% 5% 5%;
+    grid-template-areas: "Logo Home TVSHOWS MOVIES NEW&POPULAR MYLIST BROWSEBYLANG Search Notification Profile";
+}
+
+.navbar_item{
+    margin-top: 20px;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#netflix_logo{
+    width:60%;
+    grid-area: "Logo";
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar_item:hover{
+    opacity:0.6;
+}
+
+.logo{
+    width:30%;
+}
+
+
+
+
+#Hidden_Search{
+    position: absolute;
+    top:3%;
+    left:75%;
+    display: none;
+}   
+
+#Hidden_Search input{
+    padding:10px;
+    border-radius: 12px;
+}
+
+
+.Trailer_Container{
+    position: absolute;
+    top:0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.MainPage_Video_Logo{
+    position: absolute;
+    left:0%;
+    top:20%;
+}
+.LogoPic{
+    width:50%;
+}
+
+
+#PlayNow{
+    background-color: white;
+    color:black;
+    left:10%;
+    padding:15px;
+    width:80px;
+    border-radius: 12px;
+    font-weight: bolder;
+}
+
+#MoreInfo{
+    background-color: black;
+    color:white;
+    left:18%;
+    padding:15px;
+    width:100px;
+    border-radius: 12px;
+}
+
+.MainPage_Video_Buttons{
+    position: absolute;
+    top: 70%;
+
+}
+.MainPage_Video_Buttons:hover{
+  
+    opacity: 0.7;
+}
+.mainpage_headings{
+        color:white;
+        z-index: 2;
+}
+
+#actionadv{
+    position:absolute;
+    top:90%;
+    left:3%;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.MovieList{
+    position: absolute;
+    top:95%;
+    left:3%;
+    z-index: 2;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:8px;
+    overflow-x: scroll;    
+}
+
+#TrendingNow{
+    z-index: 1;
+    position:absolute;
+    top:120%;
+    left:3%;
+}
+
+.Movie>*{
+    transition-property: all;
+    transition-duration: 1s;
+}
+.Movie>*:active{
+    margin: 20px;
+    transform: scale(1.15);
+    width:280px;
+    height: 280px;
+}
+
+
+
+.TrendingList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:8px;
+    position:absolute;
+    top:130%;
+    left:3%;
+}
+
+.Notifications_List{
+    color:red;
+    position: absolute;
+    top:10%;
+    left:60%;
+    padding:1px;
+    display: none;
+    border-top: 5px solid white;
+    border-left: 1px solid white;
+    border-right:1px solid white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: textanim 4s infinite;
+
+}
+
+
+.Notifications_List > li{
+    border-bottom:2px solid white;
+    padding:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+
+@keyframes textanim {
+    20%{
+        color:white;
+    }
+    50%{
+        color:red;
+
+    }
+    75%{
+        color:white;
+    }
+    100%{
+        color:red;
+    }
+}
+
+.thumbnail_img_notifs{
+    width:30%;
+    margin-right: 20px;
+}
+
